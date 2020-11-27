@@ -10,4 +10,5 @@ body {
   text-rendering: optimizeLegibility !important;
   -webkit-font-somoothing: antialiased !important;
   font-family: "Abel", "Lato", Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
