@@ -47,10 +47,21 @@
     padding-bottom: 30px;
     cursor: pointer;
 }
-
-.lista-filmes img{
-    height: 100%;
-    width: 100%;
+@media only screen and (min-width:10px) and (max-width:700px)
+{
+    .lista-filmes{
+        display: contents;
+    }
+}
+@media only screen and (max-width:701px) and (max-width:9999px)
+{
+    .lista-filmes img{
+        display: block;
+        height: 100%;
+        width: 100%;
+        min-width: 175px;
+        min-height: 262px;
+    }
 }
 
 .informacoes-filme{
@@ -76,6 +87,7 @@
     color: var(--azul-aqua);
     font-size: 33px;
     font-weight: lighter;
+    white-space: nowrap
 }
 
 .porcentagem-filme{
@@ -141,7 +153,7 @@
     border: 1px solid var(--azul-escuro);;
     border-radius: 20px;
 }
-       
+
 .paginacao{
     display: flex;
     justify-content: center;
