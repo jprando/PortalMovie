@@ -148,6 +148,10 @@ function getMovie() {
                         <p>${filme.release_date}</p>
                     </div>
                 <div class="descricao-filme">
+                <div class="poster-filme mobile">
+                    <img src="${posterFilme}${filme.poster_path}" alt="">
+                </div>
+
                     <div class="informacoes-filme">
 
                         <div class="sinopse">
@@ -198,7 +202,7 @@ function getMovie() {
 
                         <div class="categoria-porcentagem">
                             <div class="genero-filme">
-                                <div class="genero">
+                                <div class="genero detalhe">
                                     <span>Ação</span>
                                     <span>Aventura</span>
                                     <span>Fantasia</span>
@@ -210,7 +214,7 @@ function getMovie() {
                         </div>
 
                     </div>
-                    <div class="poster-filme">
+                    <div class="poster-filme desktop">
                         <img src="${posterFilme}${filme.poster_path}" alt="">
                     </div>
                 </div>
