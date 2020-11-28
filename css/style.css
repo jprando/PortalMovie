@@ -39,7 +39,7 @@
     background-color :var(--cinza-escuro);
 }
 
-.lista-filmes{
+.lista-filmes {
     max-width: 830px;
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -60,7 +60,7 @@
         flex-direction: column;
     } 
 
-    .lista-filmes{
+    .lista-filmes {
         display: contents;
     }
 }
@@ -70,12 +70,14 @@
         margin-top: 20px;
     } 
     
-    .lista-filmes img{
+    .lista-filmes img {
         display: block;
         height: 100%;
         width: 100%;
-        min-width: 175px;
-        min-height: 262px;
+        min-width: 220px;
+        max-width: 220px;
+        min-height: 330px;
+        max-height: 330px;
     }
 }
 
