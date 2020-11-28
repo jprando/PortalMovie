@@ -1,5 +1,7 @@
 const campoPesquisa = document.querySelector("#inputValue");
 
+let _timer = null;
+
 $(document).ready(() => {
   init();
   $("#searchForm").on("submit", (e) => {
@@ -7,6 +9,14 @@ $(document).ready(() => {
     verificarcampo(valorPesquisa);
     e.preventDefault();
   });
+  _window_onresize = window.onresize;
+  window.onresize = () => {
+    if(_window_onresize) _window_onresize()
+    clearTimeout(_timer);
+    _timer = setTimeout(function(){
+      location.reload();
+    }, 800);
+  }
 });
 
 function getMoviesPopular(urlPopular) {
